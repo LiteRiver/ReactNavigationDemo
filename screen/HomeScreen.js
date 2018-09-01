@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button, Card } from '../component';
+import { FontAwesome } from '@expo/vector-icons';
 
 export default class HomeScreen extends Component {
+  static navigationOptions = {
+    title: 'Home'
+  }
+
   render() {
     const { navigate } = this.props.navigation;
     return (
